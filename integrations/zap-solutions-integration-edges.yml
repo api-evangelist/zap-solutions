@@ -1,0 +1,7 @@
+generated: '2026-10-14'
+method: none
+summary: The provider's only known site, zap.solutions, serves an expired-domain parking page; no integrations, partners or marketplace listings found.
+edges: []
+checked:
+- http://zap.solutions
+- https://zap.solutions

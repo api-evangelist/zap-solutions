@@ -1,23 +1,44 @@
 aid: zap-solutions
 name: Zap Solutions
-description: 'Zap Solutions is a company surfaced via the API Evangelist harvest backlog (source: market-gap:crypto-exchanges(NYDFS))
-  and added to the network as a stub for full-pipeline profiling.'
+description: Zap Solutions, Inc. is a money transmitter / virtual-currency business surfaced in the NYDFS crypto-exchange market-gap harvest; Indiana DFI lists Zap Solutions, Inc. with a Money Transmitter license (No. 64521, issued 2023-08-17). Its website domain zap.solutions currently serves a Namecheap 'Domain registration has expired' parking page over HTTP and does not answer HTTPS, and no public API, developer portal or documentation was found.
 url: https://raw.githubusercontent.com/api-evangelist/zap-solutions/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-gap:crypto-exchanges(NYDFS)
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-14 (local-v5; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
-modified: '2026-10-13'
+modified: '2026-10-14'
 tags:
 - Company
-apis: []
+- Payments
+- Money Transmission
+- Virtual Currency
+- Cryptocurrency
+- Fintech
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Hosts
+  url: hosts/zap-solutions-hosts.yml
 - type: Website
   url: https://zap.solutions
+apis: []
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: zap.solutions serves a Namecheap 'Domain registration has expired' parking page over HTTP (HTTPS and api.zap.solutions do not connect), so the company publishes no developer program, docs or contract.
+  evidence:
+  - url: http://zap.solutions
+    status: 200
+  - url: https://api.zap.solutions
+    status: 0
+  checked: '2026-10-14'
+x-enrichment:
+  date: '2026-10-14'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v5
