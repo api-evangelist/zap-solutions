@@ -6,6 +6,9 @@ x-type: company
 x-source: harvest:market-gap:crypto-exchanges(NYDFS)
 x-tier: profiled
 x-tier-reason: enrichment pass 2026-10-14 (local-v5; was harvest)
+x-status: defunct
+x-status-reason: domain-expired
+x-status-evidence: http://zap.solutions serves a Namecheap 'Domain registration has expired' parking page (HTTP 200, page text 'expired'); https://zap.solutions does not connect (curl exit 35). Probed 2026-10-14. Repo kept local only; not published to GitHub.
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-14'
